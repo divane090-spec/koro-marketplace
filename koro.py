@@ -1,17 +1,7 @@
 
         conn.execute("""
-            CREATE TABLE IF NOT EXISTS utilisateurs (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                nom TEXT NOT NULL,
-                telephone TEXT NOT NULL,
-                email TEXT NOT NULL COLLATE NOCASE UNIQUE,
-                mot_de_passe_hash TEXT NOT NULL,
-                role TEXT NOT NULL
-                    CHECK (role IN ('acheteur', 'vendeur')),
-                date_creation TEXT NOT NULL
-                    DEFAULT CURRENT_TIMESTAMP
-            )
-        """)
+            
+              
 
 import sqlite3
 import re
